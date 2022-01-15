@@ -17,7 +17,7 @@
     .container{
         background-color: #fff;
         width: 100vw;
-        height: 100vh;
+        height: 70vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -52,6 +52,44 @@
     .btns a:active{
         text-decoration: none;
     }
+    .creditouter{
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .creditinner{
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+    }
+
+    .creditinner a{
+        margin: 5px;
+        border-radius: 4px;
+        color: #fff;
+        background-color: dodgerblue;
+        text-decoration: none;
+        padding: 10px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .creditinner a:hover{
+        background-color: #fff;
+        color: dodgerblue;
+        border: 1px solid dodgerblue;
+    }
+
+    .social{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .social a{
+        padding: 5px 8px;    
+    }
 </style>
 
 <body>
@@ -65,7 +103,24 @@
         <div class="btns">
             <a id="butn">Google Search</a>
         </div>
+        
+        
     </div>
+    <div class="creditouter">
+        <div class="creditinner">
+            <a href="https://github.com/ShivamKumarSah/Google-Search"><i class="fab fa-github"></i> Made by Shivam Kumar Sah</a>
+        
+        <div class="social">
+            <a href="https://github.com/ShivamKumarSah"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/shivam-sah/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com/I_am_Shivam_Sah"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/i_am_shivam_sah"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/I.am.Shivam.Sah/"><i class="fab fa-facebook-f"></i></a>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/22336f0049.js" crossorigin="anonymous"></script>
     <script>
         // function to change user input to google search url
         document.getElementById("butn").onclick=function()
