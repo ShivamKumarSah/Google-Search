@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: arial, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 48px 1fr 180px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-bar {
+    margin: 18px 0;
+    padding: 8px 13px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid rgba(128, 128, 128, 0.171);
+    align-items: center;
+}
+
+.search-bar:hover {
+    border: 1px solid rgba(128, 128, 128, 0.253);
+    box-shadow: 0px 2px 4px rgba(128, 128, 128, 0.253);
+}
+
+.icon {
+    margin: 0 5px;
+    height: 80%;
+    width: auto;
+}
+
+.lens-icon {
+    opacity: 0.6;
+}
+
+#search-box {
+    width: 35vw;
+    height: 25px;
+    border: 1px solid transparent;
+    font-size: 16px;
+    margin: 0 5px;
+}
+
+#search-box:focus {
+    outline: none;
+    border: 1px solid transparent;
+}
+
+#search-btn {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    color: #3c4043;
+    border-radius: 4px;
+    font-size: 14px;
+    margin: 11px 0;
+    padding: 0 16px;
+    height: 36px;
+    min-width: 54px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#search-btn:hover {
+    border: 1px solid #3c404322;
+    box-shadow: 0px 2px 2px #3c404322;
+}
+
+#query-url {
+    text-decoration: none;
+}
+
+.mic-icon {
+    cursor: pointer;
+}
+
+.credit-outer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.credit-inner {
+    width: max-content;
+    padding: 25px 15px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+}
+
+.social-btn {
+    background-color: dodgerblue;
+    text-decoration: none;
+    margin: 25px 5px;
+    border-radius: 4px;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid transparent;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.social-btn:hover {
+    background-color: #fff;
+    color: dodgerblue;
+    border: 1px solid dodgerblue;
+}
